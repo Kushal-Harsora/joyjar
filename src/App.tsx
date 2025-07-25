@@ -214,7 +214,7 @@ const App = () => {
         <section>
 
           <video ref={videoRef} className='w-screen h-screen object-cover z-10' muted autoPlay loop playsInline preload="auto">
-            <source src="/joy.mp4" type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}joy.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
