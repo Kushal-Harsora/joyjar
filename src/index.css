@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Italianno&display=swap');
+@import "tailwindcss";
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-head {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* 
+.span-text {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+} */
