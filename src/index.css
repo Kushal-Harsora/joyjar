@@ -11,14 +11,13 @@
   font-style: normal;
 }
 
+::selection {
+  background-color: black;
+  color: white;
+}
+
 .nav-head {
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
 }
-/* 
-.span-text {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: normal;
-} */
