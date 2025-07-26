@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# 🎉 Joyjar — Capture Joyful Moments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and animated web experience focused on capturing and storing joyful memories. Designed as more than just a website — it's a storytelling platform blending design, interactivity, and emotion.
 
-Currently, two official plugins are available:
+[🌐 Live Site](https://kushal-harsora.github.io/joyjar/) | [📁 Source Code](https://github.com/Kushal-Harsora/joyjar)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 About the Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Joyjar** is a modern frontend application built from scratch with **React**, **Tailwind CSS**, **GSAP**, and **Framer Motion**. It demonstrates a balance of creativity and functionality, aimed at delivering an immersive UX with thoughtful animations and responsive design.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> 🧠 “It’s not just a site — it’s an experience.”
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+- **React** – Component-based UI development
+- **Tailwind CSS** – Utility-first styling for fast, responsive design
+- **GSAP (GreenSock Animation Platform)** – Smooth scroll-based animations
+- **Framer Motion** – Elegant UI/UX transitions
+- **Vite** – Fast dev environment and build tool
+
+---
+
+## ✨ Features
+
+- 🔄 **Fully responsive** across all screen sizes
+- ⚙️ **Smooth animations** with GSAP and Framer Motion
+- 🎨 **Custom UI components** designed with accessibility in mind
+- 🚀 **Performance optimized** and lightweight
+- 🧩 **Modular, clean, and scalable code structure**
+- 🧠 **Focus on UX storytelling** and user flow
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- npm (comes with Node) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Kushal-Harsora/joyjar.git
+cd joyjar
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install Dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+3. **Run the development server**
+
+```bash
+npm run dev
+```
+
+4. **Open the Web Page**
+
+go to the Browser and open the page: http://localhost:5173/joyjar/
+
+### 🧑‍💻 Author
+[Kushal Harsora](https://github.com/Kushal-Harsora/)
+
+Email: kushalharsora2003@gmail.com
