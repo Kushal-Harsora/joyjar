@@ -263,7 +263,7 @@ const App = () => {
     }) {
       const common = {
         trigger: document.body,
-        start: `top+=${window.innerHeight * 3.25} top`,
+        start: window.innerWidth > 450 ? `top+=${window.innerHeight * 3.25} top` : `top+=${window.innerHeight * 3.75} top`,
         end: '+=600',
         scrub: true,
         pinSpacing: false,
@@ -305,7 +305,7 @@ const App = () => {
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
 
-      <main className=' h-fit w-screen flex flex-col items-start justify-center'>
+      <main className=' h-fit w-screen flex flex-col items-start justify-center overflow-x-hidden'>
 
         <span ref={scrollSpan} className='w-fit max-lg:hidden absolute top-0 left-0 flex flex-row bg-white rounded-4xl px-4 py-2 z-50'>Scroll <ArrowDown /></span>
         <section
@@ -340,7 +340,7 @@ const App = () => {
         </div>
 
         <section>
-          <video ref={videoRef} className='w-screen h-screen object-cover z-10' muted autoPlay loop playsInline preload="metadata">
+          <video ref={videoRef} className='w-screen max-w-screen h-screen max-h-screen object-cover z-10 overflow-x-hidden' muted autoPlay loop playsInline preload="metadata">
             <source src={`${import.meta.env.BASE_URL}joy.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -362,7 +362,7 @@ const App = () => {
             <div className=' h-full max-md:h-[2.5px] w-[7.5px] max-md:w-full bg-black'></div>
             <div className=' w-full flex flex-col items-center justify-center gap-4'>
               <h3 className='w-full h-full text-9xl font-bold text-center'>
-                100M+
+                10M+
               </h3>
               <p className=' w-full text-center text-3xl'>
                 Joyful Memories sealed in the jar.
